@@ -28,6 +28,7 @@ export function SolicitudesToolbar<TData>({ table }: ToolbarProps<TData>) {
 	const {
 		marcas,
 		tipos,
+		cargarMarcas,
 		tiposTotales,
 		cargarTiposTotales,
 		cargarTiposSolicitud,
@@ -36,6 +37,7 @@ export function SolicitudesToolbar<TData>({ table }: ToolbarProps<TData>) {
 	const { setSolicitudes, setLoading } = useSolicitudesTableStore();
 
 	useEffect(() => {
+		cargarMarcas();
 		cargarTiposTotales();
 	}, []);
 

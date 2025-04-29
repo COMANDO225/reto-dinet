@@ -2,11 +2,9 @@ import { getDetalleSolicitud } from "@/actions/solicitudes";
 import DetalleSolicitudCard from "@/components/ui/DetalleSolicitudCard";
 import React from "react";
 
-interface CodigoPageDynamicProps {
-	params: { codigoId: string };
-}
-const CodigoPageDynamic = async (props: CodigoPageDynamicProps) => {
-	const { params } = props;
+export type paramsType = Promise<{ codigoId: string }>;
+
+export default async function Page({ params }: { params: paramsType }) {
 	const { codigoId } = await params;
 
 	const detalleSolicitud = await getDetalleSolicitud(codigoId);
@@ -21,6 +19,4 @@ const CodigoPageDynamic = async (props: CodigoPageDynamicProps) => {
 		);
 	}
 	return <DetalleSolicitudCard solicitud={detalleSolicitud.data} />;
-};
-
-export default CodigoPageDynamic;
+}

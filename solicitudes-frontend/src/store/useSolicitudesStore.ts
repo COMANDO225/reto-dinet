@@ -15,25 +15,23 @@ interface State {
 	limpiarTiposSolicitud: () => void;
 }
 
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+
 export const useSolicitudesStore = create<State>()(
 	immer((set) => ({
 		marcas: [],
 		tipos: [],
 		tiposTotales: [],
 		async cargarMarcas() {
-			const res = await fetch("http://localhost:8080/api/v1/marcas");
+			const res = await fetch(`${API_BASE_URL}/marcas`);
 			set({ marcas: await res.json() });
 		},
 		async cargarTiposSolicitud(marcaId) {
-			const res = await fetch(
-				`http://localhost:8080/api/v1/marcas/${marcaId}/tipos`
-			);
+			const res = await fetch(`${API_BASE_URL}/marcas/${marcaId}/tipos`);
 			set({ tipos: await res.json() });
 		},
 		async cargarTiposTotales() {
-			const res = await fetch(
-				`http://localhost:8080/api/v1/tipos-solicitud`
-			);
+			const res = await fetch(`${API_BASE_URL}/tipos-solicitud`);
 			set({ tiposTotales: await res.json() });
 		},
 		limpiarTiposSolicitud() {
