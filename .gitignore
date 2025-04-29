@@ -1,0 +1,27 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs generales
+*.log
+
+# Archivos temporales / swap
+*.swp
+*.tmp
+
+# Archivos de VSCode
+.vscode/
+history/
+
+# Archivos de JetBrains (IntelliJ IDEA, WebStorm, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Archivos de configuración personal
+*.bak
+*.orig
+
+# Mac OS basura
+._*
