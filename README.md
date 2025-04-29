@@ -7,6 +7,10 @@ Este repositorio contiene el código fuente del reto técnico solicitado por DIN
 
 ---
 
+(https://res.cloudinary.com/dro4ur0kq/image/upload/v1745945542/Captura_de_pantalla_2025-04-29_105406_hd0ilw.png)
+
+---
+
 ## 🚀 Tecnologías clave
 
 | Parte           | Stack principal                                                         |
