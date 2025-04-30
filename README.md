@@ -6,6 +6,7 @@ Este repositorio contiene el código fuente del reto técnico solicitado por DIN
 -   ⚙️ **Backend**: Spring Boot WebFlux (reactivo), Java 21, PostgreSQL
 
 ---
+### 👉 [✨ Ver la demo ](https://reto-dinet-frontend.vercel.app)
 
 ![Vista previa](https://res.cloudinary.com/dro4ur0kq/image/upload/v1745945542/Captura_de_pantalla_2025-04-29_105406_hd0ilw.png)
 
@@ -211,13 +212,12 @@ La aplicación estará disponible en: [http://localhost:3000](http://localhost:3
 -   Exportación CSV basada en TanStack Table
 -   Vista detallada por código
 -   Generación de código QR para compartir la URL de la solicitud
--   Diseño responsivo con Tailwind y experiencia moderna
 
 ---
 
 ## 👨‍💼 Autor
 
-Desarrollado por **[Tu Nombre o Usuario de GitHub]** como parte del reto técnico de DINET.
+Desarrollado por **Anderson Almeyda** como parte del reto técnico de DINET.
 
 ---
 
